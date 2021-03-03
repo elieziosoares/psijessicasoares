@@ -18,7 +18,7 @@
                         <div class="column is-marginless">
                             <h5 class="has-text-grey-lighter">{{site.author-name}}</h5>
                             <div class="content has-text-grey">
-                                <p>{{site.author-about | truncate: 75 }}</p>
+                                <p>{{site.author-about-abstract | truncate: 110 }}</p>
                             </div>
                         </div>
                     </div>
@@ -27,8 +27,8 @@
 
             <!--Link Section-->
             <div class="column has-text-white">
-                <h3>More Links</h3>
-                {% for sitepage in site.html_pages offset: 4 %}
+                <h3>Contato</h3>
+                <!--{% for sitepage in site.html_pages offset: 4 %}
                 {% unless sitepage.url == '/'  limit: 2 %}
                 <li>
                     <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
@@ -36,7 +36,17 @@
                 {% endunless %}
                 {% endfor %}
                 <li>
+
                     <a target="_blank" href="{{site.url}}{{site.baseurl}}/feed.xml">Subscribe via RSS</a>
+                </li>-->
+                <li class="has-text-grey-lighter">
+                    <a href="https://wa.me/{{site.whatsapp_number}}">{{site.whatsapp_number_text}}</a>
+                </li>
+                <li>
+                    <a href="http://www.instagram.com/{{site.instagram_username}}">@{{site.instagram_username}}</a>
+                </li>
+                <li>
+                    <a href="mailto:{{site.email}}">{{site.email}}</a>
                 </li>
             </div>
 
