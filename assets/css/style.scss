@@ -18,6 +18,11 @@
     left: auto;
 }
 
+.navbar-item{
+    margin: auto 10px auto 10px;
+    height: 100%;
+}
+
 a.navbar-item:hover,
 .navbar-link:hover {
     background-color: rgba($color: #000, $alpha: 0.25) !important;
@@ -37,7 +42,17 @@ a.navbar-item.is-active {
 .navbar-link:not(.is-arrowless)::after {
     border-color: grey;
 }
+#navbar-brand-img{
+    max-height: 2.75rem;
+}
+#navbar-brand-link:hover {
+    background-color: rgba($color: #000, $alpha: 0) !important;
+    //color: white !important;
+}
 
+#brand-simbol{
+    margin: 10px 20px 10px 20px;
+}
 
 #hero {
     //background: rgb(0, 0, 0);
@@ -68,6 +83,7 @@ a.navbar-item.is-active {
 }
 .subtitle {
     letter-spacing: 0.25rem;
+    font-family: Montserrat;
 }
 
 #about {

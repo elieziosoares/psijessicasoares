@@ -3,9 +3,10 @@
 
         <!-- logo or branding image on left side -->
         <div class="navbar-brand">
-            <a class="navbar-item"
+            <a class="navbar-item" id="navbar-brand-link"
                 href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">
-                <strong>{{site.title}}</strong>
+                <!--<strong>{{site.title}}</strong>-->
+                <img id="navbar-brand-img" alt="Jéssica Soares Psicóloga" src="/assets/images/brand_name.png"  />
             </a>
 
             <div class="navbar-burger" data-target="navbar-menu">
@@ -26,10 +27,11 @@
                     href="{% if page.layout == 'default' %}{{site.url}}{{site.baseurl}}/#{% else %}{{site.url}}{{site.baseurl}}/{% endif %}">HOME</a>
                 <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#about">SOBRE MIM</a>
 
-                
+                <img id="brand-simbol" alt="Um girassol feito a mão, representando a marca Jéssica Soares Psicóloga" src="/assets/images/simbol-jessica.png" width="40px" />
+
                 <a class="navbar-item" href="{{site.url}}{{site.baseurl}}/#contact">CONTATO</a>
                 <a class="navbar-item {% if page.layout == 'blog' %}is-active{% endif %}"
-                    href="{{site.url}}{{site.baseurl}}/blog">CONTEÚDO</a>
+                    href="{{site.url}}{{site.baseurl}}/blog">TEXTOS</a>
                 {% include dropdown.html %}
             </div>
 
