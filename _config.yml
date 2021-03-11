@@ -18,7 +18,8 @@ site-keywords: Jéssica Soares, Jéssica, Soares, Jessica, terapia, Psicoterapia
 favicon-url: 
 
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
-heroimage: https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3769021.jpg&fm=jpg
+heroimage: /assets/images/foto_site.jpg
+#https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?cs=srgb&dl=pexels-andrea-piacquadio-3769021.jpg&fm=jpg
 
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
